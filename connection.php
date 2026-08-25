@@ -9,4 +9,4 @@ if (!$conn) {
     echo 'Database connection failed';
 }
 
-?>gi
+?>
