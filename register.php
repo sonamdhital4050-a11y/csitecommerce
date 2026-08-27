@@ -18,7 +18,7 @@ if(!empty($_POST)){
 }
 
 ?>
-<h1>register</h1>
+<h1>Register</h1>
 
 <form action="" method="post">
     Name: <input type="text" name="name" required><br> <br>
