@@ -18,7 +18,7 @@ if(!empty($_POST)){
 }
 
 ?>
-<h1>login</h1>
+<h1>Login</h1>
 <form action="" method="post">
     Email: <input type="email" name="email" required><br>
     Password: <input type="password" name="password" required><br>
