@@ -30,12 +30,16 @@ session_start();
 </style>
 </head>
 <body>
-    <a href="add-product.php">Add Product</a>
+    
+
 
 <a href="index.php">Home</a>
+<a href="register.php">Register</a>
+<a href="login.php">Login</a>
 <a href="about.php">About Us</a>
 <a href="category.php">Category</a>
 <a href="products.php">Products</a>
+<a href="add-product.php">Add Product</a>
 <a href="contact.php">Contact</a>
-<a href="login.php">Login</a>
-<a href="register.php">Register</a>
+
+
