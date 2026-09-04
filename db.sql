@@ -1,19 +1,3 @@
--- CREATE DATABASE IF NOT EXISTS csitecommerce;
-
--- use csitecommerce;
-
--- CREATE TABLE IF NOT EXISTS users(
--- uid int AUTO_INCREMENT PRIMARY key,
--- name varchar(100),
--- email varchar(100) UNIQUE,
--- password varchar(100),
--- gender ENUM("male","female","others"),
--- role SET("admin","user"),
--- image varchar(100),
--- created_at datetime,
--- updated_at datetime
--- );
-
 CREATE DATABASE IF NOT EXISTS csitecommerce;
 
 use csitecommerce;
@@ -53,13 +37,14 @@ FOREIGN KEY (user_id) REFERENCES users(uid) ON DELETE RESTRICT,
 FOREIGN KEY (category_id) REFERENCES category(cid) ON DELETE RESTRICT
 );
 
+
 CREATE TABLE IF NOT EXISTS orders(
-oid int AUTO_INCREMENT PRIMARY KEY,
+oid int AUTO_INCREMENT PRIMARY key,
 user_id int,
 product_id int,
-    quantity int,
+quantity int,
 order_date datetime,
 order_status set("complete","pending") DEFAULT "pending",
 FOREIGN KEY (user_id) REFERENCES users(uid),
-    FOREIGN KEY (product_id) REFERENCES products(pid)
+FOREIGN KEY (product_id) REFERENCES products(pid)
 );
